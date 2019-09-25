@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midturn</title>
+	<meta charset="utf-8">
+   <style type="text/css" media="screen">
+   	.container{
+			display: grid;
+			grid-template-areas: 'header header header header'
+			'menubar menubar menubar menubar'
+			'menu content content content'
+			'footer footer footer footer'
+		}
+		.header{
+			grid-area: header;
+		}
+		.menubar{
+
+			grid-area: menubar;
+			overflow: hidden;
+			background-color: #F15922;;
+		}
+		
+		.content{
+			grid-area: content;
+			position: absolute;
+			margin-top: -300px;
+			margin-left: 300px;
+		}
+		.footer{
+			grid-area:footer;
+		}
+		.flex{
+	       display: flex;
+	       justify-content: center;
+	       align-items: center;
+        }
+
+        .logo{
+	       flex-grow: 1
+        }
+        input {
+           -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+           box-shadow: none;
+        }
+        .button-search{
+        	background: url(../image/button_search.png) center center no-repeat;
+           width: 33px;
+           height: 31px;
+           cursor: pointer;
+           float: right;
+           border: none;
+           padding: 0;
+           text-indent: -9999px;
+           display: block;
+           line-height: 0;
+           font-size: 0;
+        }
+        .menubar a{
+        	color :#f2f2f2;
+        	text-align: center;
+        	padding: 14px 16px;
+        	text-decoration: none;
+        	font-size: 27px;
+        }
+        .menubar a:hover{
+        	
+        	color:black;
+        }
+        .menubar a.active{
+        	background-color: #c4b99b;
+        	color:white;
+        }
+        
+		.table{
+			position: absolute;
+			margin-left: 700px;
+			margin-top: -350px;
+			border: dotted;
+			width: 150px;
+			height: 250px;
+		}
+		.menu {
+
+			grid-area: menu;
+            padding: 10px;
+            margin: 10px;
+            margin-left: -30px;
+            margin-top: 5px;
+            border: 4px solid #F15922;
+
+        }
+        
+        .menu ul {
+            background: #ab9459;
+            list-style: none;
+            padding: 0px;
+            width: 200px;
+            text-align: center;
+        }
+        
+        .menu ul li {
+            position: relative;
+            width: 200px;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #fff;
+        }
+        /**/
+        
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 0 16px;
+            display: block;
+        }
+        
+        .menu li:hover {
+            background: #c2b186;
+        }
+        .box{
+        	background: #F9F9F9 url no-repeat right bottom;
+            height: 29px;
+            padding-right: 60px;
+            border: 1px solid #dcdcdc;
+            color: #3a3a3a;
+            font: bold 13px Arial;
+            text-transform: uppercase;
+            line-height: 29px;
+            text-indent: 20px;
+            margin-bottom: 0;
+            text-shadow: none;
+            -webkit-border-radius: 3px 3px 0 0;
+            -moz-border-radius: 3px 3px 0 0;
+            -khtml-border-radius: 3px 3px 0 0;
+            border-radius: 3px 3px 0 0;
+            width: 1500px;
+        }
+        
+        .box-heading {
+        	position: absolute;
+            font: bold 13px Arial;
+            color: #3b3b3b;
+            text-transform: uppercase;
+            margin-left: 350px;
+        }
+        .people{
+        	position: absolute;
+        	margin-top:  -400px;
+        	margin-left: 300px;
+        	border-top: red;
+        }
+        .giay{
+        	border: 1px #e0b0ad solid;
+            border-radius: 15px;
+            width: 250px;
+            height: 400px;
+
+        }
+        .sanpham{
+        	position: absolute;
+        	border: 1px #e0b0ad solid;
+            border-radius: 15px;
+            width: 500px;
+            height: 300px;
+            margin-top: -300px;
+            margin-left: 300px;
+
+        }
+        .anh{
+        	position: absolute;
+        	margin-top: 150px;
+        	margin-left: -700px;
+        }
+        .select{
+        	
+        	margin-top: center;
+        	
+        }
+        
+    	
+   	
+   </style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="flex">
+				<div class="logo">
+					<img src="http://b3.chonweb.vn/image/data/vaga/shop123.png" height="200px" width="200">
+				
+			    </div>
+			    <div class="select"><select> <option value="volvo">Volvo</option>
+                 <option value="saab">Saab</option>
+                 <option value="vw">VW</option>
+                 <option value="tomato" selected>Tat ca danh muc</option></select></div>
+			    <div class="button-search">
+			    	<input title="Tìm kiếm" type="button" value="Tìm kiếm" >
+			    	
+			    </div>
+			</div>
+		</div>
+		<div class="menubar">
+		
+			<a class="active" href="#">Danh mục sản phẩm</a>
+		    <a class="thefirst" href="#">TRANG CHỦ</a>
+			<a href="#">ĐỒNG HỒ</a>
+			<a href="#">PHỤ KIỆN</a>
+		    <a href="#">BÓP DA</a>
+		    <a href="#">GIÀY DÉP</a>
+		    <a href="#">HƯỚNG DẪN</a>
+		    <a href="#">HÃNG</a>
+			
+			
+		  
+	</div>
+	<div class="menu">
+		<ul>
+			<li><a href="#" class="active">Danh mục sản phẩm</a></li>
+			<li><a href="#">Đồng hồ nam</a></li>
+			<li><a href="#">Đồng hồ nữ</a></li>
+			<li><a href="#">Đồng hồ cặp</a></li>
+			<li><a href="#">Đồng hồ thông minh</a></li>
+			<li><a href="#">Đồng hồ điện tử</a></li>
+			<li><a href="#">Đồng hồ rẻ</a></li>
+			<li><a href="#">Giày dép nam</a></li>
+			<li><a href="#">Phụ kiện nam</a></li>
+		</div>
+		</ul>
+
+	
+	</div>
+	<div class="content">
+		<img src="http://b3.chonweb.vn/image/cache/data/s1-680x285.jpg">
+	<div class="table">
+		<h4><center>SẢN PHẨM MỚI</center></h4>
+		<p><center>Kính thời trang</center></p>
+		<p><strike>900.000đ</strike>&nbsp;&nbsp;&nbsp;500.000đ</p>
+		<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/52-136x176.jpg">
+	</div>
+</div>
+<div class="footer">
+	<div class="flex">
+		<div class="anh">
+	 <img src="http://b3.chonweb.vn/image/data/banner-hot.jpg" >
+	</div>
+
+	<div class="box">
+
+		<div class="box-heading">
+			<span> Sản phẩm nổi bật</span>
+		</div>
+		<div class="flex">
+		<div>
+		    <img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/19-125x125.jpg">
+		<p>Túi xách da</p>
+		<h4 >1.000.000đ</h4>
+	    </div>
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/56-125x125.jpg">
+	    	<p> Túi vàng</p>
+	    	<h4>100.000đ</h4>
+	    </div>
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/16-125x125.jpg">
+	    	<p> Túi xách thời trang</p>
+	    	<h4>100.000đ</h4>
+	    </div>
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/12-125x125.jpg">
+	    	<p>Vớ thời trang</p>
+	    	<h4>200.000đ</h4>
+	    </div>
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/27-125x125.jpg">
+	    	<p>Túi xách da</p>
+	    	<h4>100.000đ</h4>
+	    </div>
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/28-125x125.jpg">
+	    	<p>Túi Xách</p>
+	    	<h4>100.000đ</h4>
+	    </div>
+	    </div>
+	
+	    <div  >
+	    	<h2>BÁN CHẠY</h2>
+	    	<div class="giay">
+	    	
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/shoes61-170x170.jpg">
+	    	<h3>GIÀY THỂ THAO</h3>
+	    	<p>Find that perfect color<br> with our color pickerand<br> discover beautiful color harmon</p>
+</div>
+	    </div>
+	    <div class="people" >
+
+	    	<div>
+	    	<h2>ĐỒNG HỒ THÔNG MINH</h2>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/banner_home_men_2-189x280.jpg">
+
+	    </div>
+	    <div class="sanpham">
+	    	<div class="flex">
+	    <div> <img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/33-80x80.jpg">
+	    	<p>Giày nữ</p>
+	    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	    <div>
+	    	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/shoes61-80x80.jpg">
+	    	<p> Giày thể thao</p>
+	    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	    <div><img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/53-80x80.jpg">
+	    	<p>Mắt kính thời trang</p>
+	    </div>
+           </div>
+           <div class="flex">
+           	<div>
+           		<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/9-80x80.jpg">
+           		<p> Thắt lưng</p>
+           	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           	<div >
+           		<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/1-80x80.jpg">
+           		<p>Thăt lưng</p>
+           	</div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div>
+            	<img src="http://b3.chonweb.vn/image/cache/data/bt_gomarket/56-80x80.jpg">
+            	<p> Túi vàng</p>
+            </div>
+        </div>
+           
+           </div>
+	    </div>
+	</div>
+
+
+	
+
+	
+</body>

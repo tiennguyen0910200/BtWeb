@@ -1,0 +1,114 @@
+
+.div{      
+	        position: absolute;
+            color: black;
+            margin-top: 0px;
+            margin-left: 150px;
+
+}
+.div1{
+	        position: absolute;
+            color: black;
+            list-style: none;
+            font-size: 15px;
+            flex-grow: 1;
+            
+}
+.div1.img1{
+            position: absolute;
+            flex-grow: 1;
+       
+		        }
+ .container{
+   display: flex;
+ }          
+           
+
+.div2{
+	        position: absolute;
+            color: black;
+            font-size: 15px;
+            margin-top: 0px;
+            margin-left: 800px;
+}
+
+.div2.img2{
+            position: absolute;
+            margin-top: 0px;
+           margin-left: 500px;
+           
+}
+.div3{
+	        position: absolute;
+            color: black;
+            font-size: 15px;
+            margin-top: 0px;
+            margin-left: 1050px;
+}
+
+.div3.img3{
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 800px;
+           
+}
+.div4{
+	        position: absolute;
+            color: black;
+            font-size: 25px;
+            margin-top: 50px;
+            margin-left: 1250px;
+
+}
+.GioHang {
+  border-radius: 18px;
+  width: 135px;
+  height: 30px;
+  background-color: #ffad33;
+  font-size: 20px;
+}
+.topnav {
+	position: absolute;
+  overflow: hidden;
+  background-color: #333;
+  margin-top: 190px;
+  width: 100%;
+
+
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+
+}
+.topnav .search-container {
+  float: right;
+  height: 40px;
+
+}
+.topnav .search-container button {
+  float: right;
+  padding: 16px 37px;
+  margin-top: 0px;
+  margin-right: 32px;
+  background: #ddd;
+  font-size: 67px;
+  border: none;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+}

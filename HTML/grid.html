@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid</title>
+	<style type="text/css" media="screen">
+		.container{
+			display: grid;
+			grid-template-areas: 'header header header header '
+			'top top top top'
+			'menu content content content'
+			'menunho menunho menunho menunho'
+			'footer footer footer footer';
+		}
+		.header{
+			background-color: white;
+			grid-area: header;
+			height: 190px;
+			padding: 30px 300px;
+		}
+		.top{
+			background-color: #80BB35 ;
+			grid-area: top;
+			
+		}
+		.menu{
+			position: absolute;
+			border-radius: 15px;
+			margin-top: 70px;
+			background-color: white;
+			grid-area: menu;
+			margin-left: 300px;
+			width: 350px;
+
+
+
+
+		}
+		.content{
+			position: absolute;
+			margin-top: 70px;
+			background-color: white;
+			grid-area: content;
+			margin-left: 750px;
+		}
+		.menunho{
+			position: absolute;
+            grid-area: menunho;
+            margin-top: 550px;
+            margin-left: 300px;
+            width: 300px;
+		}
+		.footer{
+			
+			grid-area: footer;
+			
+		}
+		.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo{
+	flex-grow: 1
+}
+
+.VanChuyen{
+	flex-grow: 1
+
+}
+.bt1{
+	color: orange;
+	border: 1px solid orange
+	background-color orange;
+	border-radius: 5px;
+	font-size: 30px;
+}
+.menungang a {
+	display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px ;
+  text-decoration: none;
+  font-size: 30px;
+
+}
+.menungang a:hover{
+	
+	background-color: #a88132;
+	
+}
+.menu a{
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+	border-radius: 15px;
+
+}
+.menu a:hover{
+	background-color: #ccc;
+
+}
+.menu a.active{
+	background-color: #80BB35 ;
+
+	color:white;
+}
+.menunho a{
+	background-color: #eee;
+	color: black;
+	display: block;
+	padding: 12px;
+	text-decoration: none;
+}
+.menunho a.active{
+	background-color: #80BB35 ;
+	color: white;
+
+}
+.nhomy{
+	position: absolute;
+	border: 1px #e6dfdf solid;
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 650px;
+    margin-left: 300px;
+    height: 450px;
+
+}
+.taomy{
+	position: absolute;
+	border: 1px #e6dfdf solid;
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 650px;
+    margin-left: 700px;
+    height: 450px;
+
+}
+.cammy{
+	position: absolute;
+	border: 1px #e6dfdf solid;
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 650px;
+    margin-left: 1100px;
+    height: 450px;
+}
+.chuoi{
+	position: absolute;
+	border: 1px #e6dfdf solid;
+    border-radius: 15px;
+    width: 300px;
+    margin-top: 650px;
+    margin-left: 1500px;
+    height: 450px;
+}
+
+.giadacbiet{
+	display: inline;
+    color: #FE9705;
+}
+.gia{
+	color: #FE9705;
+    font-size: 25px;
+    line-height: 25px;
+    display: block;
+    font-weight: 600;
+}
+.giacuu{
+	text-decoration: line-through;
+    font-size: 1.07143em;
+    margin: 0 0 0 10px;
+    display: inline-block;
+    color: #ADADAD;
+}
+.sale{
+    position: absolute;
+    font-size: 1em;
+    color: #FFF;
+    font-weight: 400;
+    padding: 0 12px 0 8px;
+    line-height: 25px;
+    text-align: center;
+    top: 20px;
+    left: -1px;
+    z-index: 10;
+    background-color: #FE9705;
+}
+.chitiet{
+	display: block; 
+    border: 1px solid;
+    margin: auto;
+    padding: 9px 15px;
+    color: #007e28;
+    position: absolute;
+  
+    width: 100px;
+}
+.dathang{
+	position: absolute;
+	border: 1px solid #80bb35;
+    margin: auto;
+    padding: 9px 15px;
+    background: #80bb35;
+    color: white;
+   
+    width: 100px;
+}
+.button{
+	position: absolute;
+	margin-bottom: 0px;
+}
+	
+
+
+
+		
+	</style>
+</head>
+<body>
+    <div class="container">   
+    	<div class="header">
+       	<div class="flex">
+       	<div class="logo">
+       	<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/logo-halinkvn.png">
+       </div>
+       <center><img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy1-0x0.png" height="30px"></center>
+       <div class="VanChuyen">
+        <b>Miễn phí vận chuyển</b>
+        <br>
+        Bán kính 5 km
+</div>
+<img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy2-0x0.png" height="30px">
+<div class="VanChuyen">
+<b>Hỗ trợ 24/7</b>
+<br>Hotline: 0366.90.80.87
+</div>
+<img src="http://at01.chonweb.vn/wp-content/uploads/2018/12/policy3-0x0.png" height="30px">
+<div class="VanChuyen">
+<b>Giờ làm việc</b>
+<br>6h00-22h00 (T2-CN)
+</div>
+  <button class="bt1">Giỏ hàng</button>
+       </div>
+   </div>
+  
+	</div>
+
+
+
+   </div>
+   <div class="top">
+
+    		
+            <div class="menungang">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="#">Trang chủ</a>
+          <a href="#">Giới thiệu</a>
+          <a href="#">Sản phẩm</a>
+          <a href="#">Tin tức</a>
+          <a href="#">Liên hệ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="Search..." name="search" style="padding-right: 120px"  >	
+          		
+		</div>
+
+	
+</div>
+    	<div class="menu">
+    		<a href="#" class="active">DANH MỤC SẢN PHẨM</a>
+    		<a href="#">HẢI SẢN NHẬP KHẨU</a>
+    		<a href="#">HẢI SẢN TƯƠI</a>
+    		<a href="#">HOA QUẢ NHẬP KHẨU</a>
+    		<a href="#">RAU,CỦ SẠCH</a>
+    		<a href="#">THỊT TƯƠI</a>
+    		<a href="#">THỰC PHẨM ĐÔNG LẠNH</a>
+    		<a href="#">TRÁI CÂY TƯƠI</a>
+    		<a href="#">ĐỒ UỐNG</a>
+    		
+    	</div>
+    	<div class="content">
+    		<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/Breaky-Banner-850x340.jpg" height="400" width="820">
+
+    	</div>
+    	<div class="menunho">
+    		<a href="#" class="active">HOA QUẢ NHẬP KHẨU</a>
+    	</div>
+        <div class="footer">
+        	<div class="nhomy"><center>
+        		<div class="sale">
+        		-20%</div>
+        		<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/nho-600x600.png" width="200px"height="300px" title="Nho Mỹ">
+        		<span itemprop="name"><center>Nho Mỹ</center></span>
+        		<div class="giadacbiet">
+        		<span class="gia">Giảm giá:120,000đ</span></div>
+        		<div >
+        			<span class="giacuu">Giá bán:150,000đ</span></div>
+        		<div>
+        		<a class="chitiet" href="file:///C:/BtWeb/HTML/nhomy.html">Chi tiết</a>
+        		<a class="dathang" href="file:///C:/BtWeb/HTML/dathang.html">Đặt hàng</a></div>
+        		</center>
+        	</div>
+        	<div class="taomy"><center>
+        		<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/CC_Apple_withPLU-Stickers-300x300.png" width="200px"height="300px" title="Táo Mỹ">
+        		<span itemprop="name"><center>Táo Mỹ</center></span>
+        		<div class="giadacbiet">
+        		<span class="gia">Giá bán:120,000đ</span></div>
+        		
+        		<div >
+        		<a class="chitiet" href="file:///C:/BtWeb/HTML/nhomy.html">Chi tiết</a>
+        		<a class="dathang" href="file:///C:/BtWeb/HTML/dathang.html">Đặt hàng</a></div>
+        		</center>
+        	</div>
+        	<div class="cammy"><center>
+        		<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/17.5-fresh-fruit-3-300x300.png" width="200px"height="300px" title="Cam Mỹ">
+        		<span itemprop="name"><center>Cam Mỹ</center></span>
+        		<div class="giadacbiet">
+        		<span class="gia">Giá bán:150,000đ</span></div>
+        		
+        		<div >
+        		<a class="chitiet" href="file:///C:/BtWeb/HTML/nhomy.html">Chi tiết</a>
+        		<a class="dathang" href="file:///C:/BtWeb/HTML/dathang.html">Đặt hàng</a></div>
+        		</center>
+        	</div>
+        	<div class="chuoi"><center>
+        		<img src="http://at01.chonweb.vn/wp-content/uploads/2019/07/banana__bigImage-300x300.png" width="200px"height="300px" title="Chuối">
+        		<span itemprop="name"><center>Chuối</center></span>
+        		<div class="giadacbiet">
+        		<span class="gia">Giá bán:150,000đ</span></div>
+        		
+        		<div >
+        		<a class="chitiet" href="file:///C:/BtWeb/HTML/nhomy.html">Chi tiết</a>
+        		<a class="dathang" href="file:///C:/BtWeb/HTML/dathang.html">Đặt hàng</a></div>
+        		</center>
+        	</div>
+        </div>
+
+    	
+   
+</body>
+</html>

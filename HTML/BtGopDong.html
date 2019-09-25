@@ -1,0 +1,166 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Table</title>
+		<style type="text/css">
+			table, th,td{
+				border: 1px solid blue;
+				border-collapse: collapse;
+			}
+			th,td{
+				padding: 5px;
+				text-align: left;
+			}
+			.blue{
+				background-color: #446fdb;
+			}
+			.black{
+				background-color: black;
+			}
+			.container{
+			display: table;
+			width:50%;
+			border-collapse: collapse;	
+		}
+		.heading{
+			font-weight: bold ;
+			display: table-row;
+			background-color: #C91622;
+			text-align: center;
+			line-height: 25px;
+			font-size: 14px;
+			font-family: georgia;
+			color: #fff;
+		}
+		.table-row{
+			display: table-row;
+			text-align: center;
+
+		}
+		.col{
+			display: table-cell;
+			border:1px solid #ccc;
+			border-color: black;
+		}
+		.border{
+            border-color: #0033FF;
+        }
+
+        .font{
+            font-weight: bold;
+            font-family: georgia;
+            color: black;
+            font-size: 12px;
+        }
+
+        .checkbox{
+            margin-left: 100px;
+        }
+
+        .submit{
+            height: 20px;
+            width: 55px;
+            margin-left: 180px;
+            background-color: #1E90FF;
+            color: #FFFFE0;
+
+
+        }
+
+        .body{
+            align-items: center;
+            border: 2px solid #0033FF;
+            width: 30%;
+            margin-left: 120px;
+            padding: 10px 10px 10px 10px;
+        }
+
+			
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>Name</th>
+				<th colspan="2"><center>Telephone</center></th>
+			</tr>
+			<tr>
+				<td>Mr. Angkor</td>
+				<td>012 123 321</td>
+				<td>069 422 980</td>
+			</tr>
+			
+		</table>
+		<br>
+		<br>
+
+		<table>
+			<tr class="blue">
+				<th>Name</th>
+				<th>Mr. Angkor</th>
+			</tr>
+			<tr>
+				<td rowspan="2">Telephone:</td>
+				<td>475876</td>
+			</tr>
+			<tr class="black">
+				<td>30859476</td>
+			</tr>
+			
+		</table>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+		<div class="heading">
+			<div class="col">Id</div>
+			<div class="col">Danh mục</div>
+		</div>
+		<div class="table-row">
+			<div class="col">1</div>
+			<div class="col">PHP</div>
+		</div>
+		<div class="table-row">
+			<div class="col">2</div>
+			<div class="col">HTML</div>
+				
+			
+			
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+<form action="form_submit" method="get" accept-charset="utf-8">
+<div class="body">
+        <h1>Personal Information</h1>
+           <span><strong>Your Name:</strong></span>
+           <input class="border" type="text"  name="firstname" value="">
+        <br>
+           <span><strong>Gender:</strong></span>
+           <input type="radio" name="male" value=""> Male
+           <input type="radio" name="female" value=""> Female
+        <br>
+           <span><strong>Your Favourite:</strong></span>
+        <br>
+           <div class="checkbox">
+           <input type="checkbox" name="cook" value=""> Cooking
+        <br>
+           <input type="checkbox" name="sing" value=""> Singing
+        <br>
+           <input type="checkbox" name="dace" value=""> Dacing
+    </div>
+
+        <br>
+        <input class="submit" type="submit" name="submit" value="Send">
+
+
+
+</div>
+
+
+</form>
+
+	
+</body>
+</html>
